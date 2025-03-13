@@ -1,0 +1,11 @@
+[Unit]
+Description=Keeping my sources fresher than Arch Linux
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/bash ~/Documents/startupbash.sh
+Type=simple
+Restart=no
+
+[Install]
+WantedBy=multi-user.target
